@@ -120,3 +120,26 @@ body { overflow-x: hidden; }
   min-width: 640px;
   border-collapse: collapse;
 }
+
+/* Ссылка для пропуска навигации (A11y) */
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 1000;
+  padding: 8px 12px;
+  color: #ffffff;
+  background-color: #111111;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 16px;
+}
+
+/* Улучшенный фокус для клавиатуры */
+:focus-visible {
+  outline: 3px solid #0057b8;
+  outline-offset: 3px;
+}
